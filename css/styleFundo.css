@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@100&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    overflow: auto;
+    scroll-behavior: smooth;
+    animation: 20s;
+}
+
+#header{
+    position: fixed;
+    width: 100vw;
+    -border: 1px solid white;
+    display: flex;
+}
+
+.flex {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 5rem 10px 2rem ;
+    border: 1px solid white;
+}
+
+#navmenu{
+    font-family: "Poppins", verdana;
+    width: 100vw;
+    display: flex;
+    border: 1px solid white;
+}
+
+.itens {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.itens li {
+    position: relative;
+}
+
+.itens li a {
+    text-decoration: none;
+    color: white;
+    font-size: 19px;
+    font-weight: 600;
+    padding: 10px 15px;
+    display: flex;
+}
+
+.itens a:hover {
+    background: none;
+    color: yellow;
+   
+}
+
+.sub-itens {
+    display: none;
+    position: absolute;
+    left: 0;
+    min-width: 180px;
+    padding: 5px 0;
+}
+.sub-itens li {
+    display: block;
+}
+.sub-itens a {
+    padding: 10px;
+    display: block;
+}
+.sub-itens a:hover {
+    font-weight: 600;
+    font-size: 1.7rem;
+    background: rgba(85, 85, 85, 0.3);
+    text-decoration: none;
+}
+li:hover .sub-itens {
+    display: block;
+}
+
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+section h1{
+    font-family: "Montserrat";
+    font-size: 5rem;
+    font-weight: 700;
+    color: white;
+    text-shadow: 0.1em 0.1em 0.2em black;
+}
+
+#home {
+    background: url("../image/backiee-98353-landscape.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#WhoAmI {
+    background: url("../image/fotografo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.bio{
+    width: 100vw;
+    margin-left: 45%;
+    margin-right: 3%;
+    padding:5rem 3rem 2rem 3rem;
+}
+
+.textBio{
+    font-family: "Poppins", verdana;
+    font-size: 1.2rem;
+    color: #ffffff;
+    font-style: oblique;
+    text-align: center;
+}
+
+#Biotecnologia {
+    background: url("../image/biotecnologia.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#Histopatologia {
+    background: url("../image/Histotecnologia.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#Bioinformatica {
+    background: url("../image/Bioinformatica.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#Projetos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url("../image/Projetos.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#Projetos img {
+    width: 110px;
+}
+
+#Artigos{
+    background: url("../image/article.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#Monografia{
+    background: url("../image/Publications.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#Contatos{
+    background: #213451;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+@media (max-width: 1080px) {        
+    .textBio{
+        font-size: 1rem;
+    }
+}
+
+@media (width: 720px) {     
+    .bio{
+        width: 80vw;
+    }
+
+    .textBio{
+        font-size: .9rem;
+        max-height: 70vh;
+    }
+}

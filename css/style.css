@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@100&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins';
+}
+
+body {
+    width: 100vh;
+    height: 100%;
+    overflow: hidden;
+}
+
+.menu-lateral {
+    width: 80px;
+    height: 100vh;
+    background-color: #202020;
+    box-shadow: 5px 0 0 #152bb8fe;
+    position: fixed;
+    -overflow: hidden;
+    transition: .5s;
+}
+
+.menu-lateral.expandir {
+    width: 350px;
+}
+
+.btn-expandir {
+    width: 100%;
+    padding-left: 40px;
+}
+
+.btn-expandir > i {
+    color: #ffff ;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#btn-close {
+    display: none;
+}
+
+ul {
+    height: 100%;
+    list-style-type: none;
+}
+
+ul li.ativo {
+    background-color: #ff4800;
+}
+
+ul li.item-menu:hover {
+    background:#ff4800  ;
+}
+
+ul li.item-menu {
+    transition: 1s;
+}
+
+
+ul li.item-menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 18px 5%;
+    display: flex;
+}
+
+ul li.item-menu a .icon > i{
+    margin-left: 35px;
+}
+
+ul li.item-menu a .txt-link {
+    margin-left: 80px;
+    transition: .7s;
+    opacity: 0;
+}
+
+.menu-lateral.expandir .txt-link {
+    margin-left: 40px;
+    opacity: 1;
+
+}
+
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    width: 95vw;
+    height: 100vh;
+    margin-left: 5vw;
+}
+
+section#home {
+    background: #30cd11;
+}
+
+section#laboratorio {
+    background-image: url("../image/mapa01.svg");
+    background-size: 45vw;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+@media (max-width:420px) {
+    ul li.item-menu a {
+        font-size: 14px;
+        padding: 22px 5%;
+    }
+}
+
+
+
+@media (min-aspect-ratio: 1/1) {
+   
+}
